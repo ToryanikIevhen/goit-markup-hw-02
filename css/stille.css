@@ -27,6 +27,7 @@ body {
  background-color: var(--accent-color);
 color: var(--poster-text-color);
 }
+/*----------------------------------------HEDER----------------*/
 .title-header
 {
         
@@ -48,7 +49,7 @@ color: var(--poster-text-color);
 
 .title-nav 
 {
-        list-style:nome;
+     /*   list-style:nome;*/
 }
 .link-nav 
 {
@@ -80,6 +81,7 @@ color: var(--poster-text-color);
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 }
+/*-------------------------------------------HIRO-----------------------*/
 
 .hiro {
        background-color: var(--background-color);
@@ -166,7 +168,7 @@ text-align: center;
         line-height: 1.18;
 }
 
-/* footer style*/ 
+/* -----------------------------------footer style-------------------------*/ 
 
 .footer
 {
