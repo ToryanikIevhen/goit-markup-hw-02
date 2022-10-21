@@ -10,6 +10,23 @@ body {
         color: var(--primary-text-color);
         font-family: 'Roboto', sans-serif;
 }
+.list 
+{
+        list-style: none;
+}
+.link
+{
+        text-decoration: none;
+}
+.link:hover, .link:focus
+{
+        color: var(--accent-color);
+}
+.button:hover, .button:focus 
+{
+ background-color: var(--accent-color);
+color: var(--poster-text-color);
+}
 .title-header
 {
         
@@ -31,7 +48,7 @@ body {
 
 .title-nav 
 {
-        list-style: nome;
+        list-style:nome;
 }
 .link-nav 
 {
@@ -41,13 +58,12 @@ body {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--accent-color);
+        color: var(--title-text-color);
         
 }
 .milto-addre
 {
         font-family: 'Roboto', sans-serif;
-        text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -66,28 +82,28 @@ body {
 }
 
 .hiro {
-  background-color: var(--background-color);
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+       background-color: var(--background-color);
+       width: 1600px;
+       height: 600px;
+       left: 0px;
+       top: 80px;
 }
 .text-hiro {
-  color: var(--poster-text-color);
-  text-align: center;
-  padding: 200px 452px 20px 452px;
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
+       color: var(--poster-text-color);
+       text-align: center;
+       padding: 200px 452px 20px 452px;
+       font-family: 'Roboto';
+       font-weight: 900;
+       font-size: 44px;
+       line-height: 1.36;
+       text-align: center;
+       letter-spacing: 0.06em;
 
  }
  .button
 {
-        color: var(--poster-text-color);
-        background-color: var(--accent-color);
+        color: var(--background-color);
+        background-color: var(--background-team-color);
         width: 216px;
         height: 50px;
         left: 692px;
@@ -102,11 +118,7 @@ body {
 
 text-align: center;
  }
- .title-work 
- {
-        list-style: nome;
-       
- }
+    /*-------------------------WORK------------------*/
  .text-work
  {
         color: var(--title-text-color);
@@ -141,9 +153,11 @@ text-align: center;
 .title-text
 {
         color: var(--title-text-color);
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+
 }
 .desckription-work
 {
@@ -182,16 +196,24 @@ text-align: center;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 14px;
-        line-height: 1.71px;
+        line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--poster-text-color);
 }
-.link {
-        text-decoration: none
-        font-family: 'Roboto', sans-serif;
+.link-footer
+{
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+}
+.milto-addres
+{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.02em;
+        color: var(--title-text-color);
+
 }
