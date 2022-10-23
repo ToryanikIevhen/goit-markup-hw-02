@@ -5,10 +5,15 @@
   --poster-text-color: #ffffff;
   --background-color: #2f303a;
   --background-team-color: #f5f4fa;
+  --button-color:#188ce8;
 }
 body {
         color: var(--primary-text-color);
         font-family: 'Roboto', sans-serif;
+        background-color: var(--poster-text-color);
+        font-size: 14px;
+        letter-spacing: 0.03em;
+
 }
 .list 
 {
@@ -24,8 +29,24 @@ body {
 }
 .button:hover, .button:focus 
 {
- background-color: var(--accent-color);
-color: var(--poster-text-color);
+ background-color: var(--background-team-color);
+color: var(--background-color);
+}
+/*--------------Button portfolio-----------*/
+.port-button
+{
+        color: var(--background-color);
+        background-color:var(--background-team-color) ;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+
+}
+.port-button:hover, .port-button:focus
+{
+        color: var(--poster-text-color);
+        background-color: var(--button-color);
 }
 /*----------------------------------------HEDER----------------*/
 .title-header
@@ -39,7 +60,10 @@ color: var(--poster-text-color);
   color: var(--accent-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.92;
+  letter-spacing: 0.03em;
 
 }
 .stile-log
@@ -69,7 +93,7 @@ color: var(--poster-text-color);
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--accent-color);
+        color: var(--primary-text-color);
 }
 .tel-addres
 {
@@ -85,15 +109,15 @@ color: var(--poster-text-color);
 
 .hiro {
        background-color: var(--background-color);
+
        width: 1600px;
        height: 600px;
-       left: 0px;
-       top: 80px;
+       
 }
 .text-hiro {
        color: var(--poster-text-color);
        text-align: center;
-       padding: 200px 452px 20px 452px;
+      /* padding: 200px 452px 20px 452px;*/
        font-family: 'Roboto';
        font-weight: 900;
        font-size: 44px;
@@ -104,20 +128,18 @@ color: var(--poster-text-color);
  }
  .button
 {
-        color: var(--background-color);
-        background-color: var(--background-team-color);
+        color: var(--poster-text-color);
+        background-color: var(--button-color);
+        text-align: center;
         width: 216px;
-        height: 50px;
-        left: 692px;
-        top: 430px;
+        /*height: 50px;*/
         font-weight: 700;
         font-size: 16px;
-        line-height: 1.19px;
+        line-height: 1.19;
 
 }
  .title-button 
  {
-
 text-align: center;
  }
     /*-------------------------WORK------------------*/
@@ -166,6 +188,9 @@ text-align: center;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+     
 }
 
 /* -----------------------------------footer style-------------------------*/ 
@@ -175,7 +200,7 @@ text-align: center;
         background: var(--background-color);
         width: 1600px;
         height: 252px;
-        left: 0px;
+       /* left: 0px; */
         top: 2094px;
 }
 .stile-log-footer
@@ -187,6 +212,10 @@ text-align: center;
 .footer-log
 {
         padding-left: 215px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.92;
+        letter-spacing: 0.03em;
 }
 .title-footer
 {
@@ -201,6 +230,7 @@ text-align: center;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--poster-text-color);
+       
 }
 .link-footer
 {
@@ -212,10 +242,10 @@ text-align: center;
 }
 .milto-addres
 {
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.02em;
-        color: var(--title-text-color);
+        letter-spacing: 0.03em;
+        color:var(--primary-text-color);
 
 }
