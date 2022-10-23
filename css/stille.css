@@ -6,6 +6,8 @@
   --background-color: #2f303a;
   --background-team-color: #f5f4fa;
   --button-color:#188ce8;
+  --color-fon:#EEEEEE;
+  --colo-secktion:#ECECEC;
 }
 body {
         color: var(--primary-text-color);
