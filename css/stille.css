@@ -8,6 +8,7 @@
   --button-color:#188ce8;
   --color-fon:#EEEEEE;
   --colo-secktion:#ECECEC;
+  --color-main:#F5F5F5;
 }
 body {
         color: var(--primary-text-color);
@@ -112,7 +113,7 @@ color: var(--background-color);
 .hiro {
        background-color: var(--background-color);
 
-       width: 1600px;
+     /*  width: 1600px;*/
        height: 600px;
        
 }
@@ -145,6 +146,14 @@ color: var(--background-color);
 text-align: center;
  }
     /*-------------------------WORK------------------*/
+    .work
+    {
+        background-color: var(--color-main);
+    }
+    .title-work
+    {
+      /*  background-color: var(--color-main);*/
+    }
  .text-work
  {
         color: var(--title-text-color);
@@ -163,7 +172,12 @@ text-align: center;
         text-align: center;
         letter-spacing: 0.03em;
 }
-
+/*----------COMMAND--------------*/
+.command 
+{
+       /* width: 1600px;*/
+        background-color: var(--background-team-color);
+}
 
 .text-command
 {
@@ -189,19 +203,36 @@ text-align: center;
 {
         font-weight: 400;
         font-size: 16px;
-        line-height: 1.18;
+        line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
      
 }
+.desckription
+{
+       ;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
 
+}
+.desckription-port
+{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.03em;
+
+}
 /* -----------------------------------footer style-------------------------*/ 
 
 .footer
 {
         background: var(--background-color);
-        width: 1600px;
-        height: 252px;
+       /* width: 1600px;*/
+       /* height: 252px;*/
        /* left: 0px; */
         top: 2094px;
 }
@@ -213,15 +244,15 @@ text-align: center;
 }
 .footer-log
 {
-        padding-left: 215px;
+/*        padding-left: 215px;*/
         font-weight: 700;
         font-size: 26px;
-        line-height: 1.92;
+        line-height: 1.19;
         letter-spacing: 0.03em;
 }
 .title-footer
 {
-        padding-left: 215px;
+        /*padding-left: 215px;*/
 }
 .link-blank
 {
