@@ -41,6 +41,8 @@ color: var(--background-color);
 {
         color: var(--background-color);
         background-color:var(--background-team-color) ;
+        font-family: inherit;
+        cursor: pointer;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
@@ -79,10 +81,6 @@ color: var(--background-color);
 /*.title-nav*/ 
 
      /*   list-style:nome;*/
-.current
-{
-        color: var(--accent-color);
-}
  
 .link-nav 
 {
@@ -95,6 +93,11 @@ color: var(--background-color);
         color: var(--title-text-color);
         
 }
+.current
+{
+        color: var(--accent-color);
+}
+
 .milto-addres
 {
         font-family: 'Roboto', sans-serif;
@@ -141,12 +144,15 @@ color: var(--background-color);
 {
         color: var(--poster-text-color);
         background-color: var(--button-color);
+        font-family: 'Roboto';
        /* text-align: center;*/
         width: 216px;
+        cursor: pointer;
         /*height: 50px;*/
         font-weight: 700;
         font-size: 16px;
         line-height: 1.19;
+        letter-spacing: 0.03em;
 
 }
 .button-list
@@ -166,14 +172,7 @@ text-align: center;
     {
         background-color: var(--poster-text-color) ; 
     }
-   .work
-    {
-       /* background-color: var(--color-main);*/
-    }
-  /*  .title-work */
-    
-      /*  background-color: var(--color-main);*/
-    
+   
  .text-work
  {
         color: var(--title-text-color);
@@ -183,6 +182,16 @@ text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
  }
+ .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0 0 0 0);
+      }
 .text-gallery
 {
         color: var(--title-text-color);
@@ -204,7 +213,7 @@ text-align: center;
         color: var(--title-text-color);
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.16px;
+        line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
 }
@@ -213,24 +222,25 @@ text-align: center;
 .title-text
 {
         color: var(--title-text-color);
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
 
 }
 .desckription-work
 {
         font-weight: 400;
-        font-size: 16px;
-        line-height: 1.71;
+       /* font-size: 16px;
+        line-height: 1.71;*/
         letter-spacing: 0.03em;
-        color: var(--primary-text-color);
+        /*color: var(--primary-text-color);*/
      
 }
 .desckription
 {
-       
+        font-family: 'Roboto';
+        color: var(--primary-text-color);
         font-weight: 400;
         font-size: 16px;
         line-height: 1.18;
@@ -269,6 +279,10 @@ text-align: center;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+}
+.address-footer
+{
+        font-style: normal;
 }
 /*.title-footer*/
 
