@@ -10,7 +10,16 @@
   --colo-secktion:#ECECEC;
   --color-main:#F5F5F5;
 }
+html
+{
+        box-sizing: border-box;
+}
+*, *::before, *::after
+{
+        box-sizing: inherit;
+}
 body {
+        margin: 0;
         color: var(--primary-text-color);
         font-family: 'Roboto', sans-serif;
         background-color: var(--poster-text-color);
@@ -18,9 +27,16 @@ body {
         letter-spacing: 0.03em;
 
 }
+h1, h2, h3, p
+{
+        margin-bottom: 0;
+
+}
 .list 
 {
         list-style: none;
+        margin: 0;
+        padding: 0;
 }
 .link
 {
@@ -36,6 +52,7 @@ body {
  background-color: var(--background-team-color);
 color: var(--background-color);
 }
+
 /*--------------Button portfolio-----------*/
 .port-button
 {
@@ -48,21 +65,53 @@ color: var(--background-color);
         line-height: 1.62;
         letter-spacing: 0.03em;
 
+        margin-left: auto;
+        margin-right: auto;
+
 }
 .port-button:hover, .port-button:focus
 {
         color: var(--poster-text-color);
         background-color: var(--button-color);
 }
+.button-list
+{
+        display: flex;
+        text-align: center;
+        background-color: var(--poster-text-color);
+        /*margin-left: auto;
+        margin-right: auto;*/
+}
+
 /*----------------------------------------HEDER----------------*/
+.container
+{
+       
+       width: 1200px;
+       /*padding-left: 15px;*/
+       vertical-align: middle;
+       margin-left: auto;
+       margin-right: auto;
+      /* autline: 20px solid:var(--button-color);*/
+}
+.heder-nav
+{
+        display: flex;
+        align-items: center;
+        /*background-color:forestgreen;*/
+}
 .title-header
 {
         
         background: var(--poster-text-color);
+        
+        
+        
 }
 
 .log 
 {
+  display:flexbox;
   color: var(--accent-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -76,28 +125,50 @@ color: var(--background-color);
 {
         color: var(--title-text-color);
 }
+.text-nav
+{
+        display: block;
+        margin-right: 40px;
+}
 
+.title-nav 
+{
+display:flex;
+margin-left: 93px;
 
-/*.title-nav*/ 
+}
+.title-nav .text-nav:last-child
+{
+        margin-right: 0;
+}
 
-     /*   list-style:nome;*/
- 
 .link-nav 
 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
         font-family: 'Roboto', sans-serif;
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--title-text-color);
+        color: var(--primary-text-color);
         
 }
 .current
 {
         color: var(--accent-color);
 }
-
+.title-nav-addres 
+{
+        display:flex;
+        margin-left: auto;      
+} 
+.title-nav-addres .title-addres+.title-addres
+{
+        margin-left: 50px;
+}
 .milto-addres
 {
         font-family: 'Roboto', sans-serif;
@@ -117,20 +188,35 @@ color: var(--background-color);
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 }
+
 /*-------------------------------------------HIRO-----------------------*/
 
 .hiro {
        background-color: var(--background-color);
-
-     /*  width: 1600px;*/
-       height: 600px;
-       text-align: center;
+        text-align: center;
+        font-family: 'Roboto';
+       
+}
+.flex-hiro
+{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     /*justify-content: center;*/
+  /*   width: 1200px;*/
+     height: 600px;  
        
 }
 .text-hiro {
        color: var(--poster-text-color);
       /* text-align: center;*/
       /* padding: 200px 452px 20px 452px;*/
+      display: flex;
+      width: 700px;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 200px;
+
        font-family: 'Roboto';
        font-weight: 900;
        font-size: 44px;
@@ -155,10 +241,8 @@ color: var(--background-color);
         letter-spacing: 0.03em;
 
 }
-.button-list
-{
-        background-color: var(--poster-text-color);
-}
+
+
  .title-button 
  {
 text-align: center;
@@ -172,6 +256,16 @@ text-align: center;
     {
         background-color: var(--poster-text-color) ; 
     }
+    .title-work
+    {
+        display: flex;
+        justify-content:center; /*first:space-around;*/
+       /* flex-wrap: nowrap;*/
+        gap: 30px;
+        margin: 0;
+        padding-left: 0px;
+
+    }
    
  .text-work
  {
@@ -181,6 +275,7 @@ text-align: center;
         line-height: 1.14px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-top: 94px;
  }
  .visually-hidden {
         position: absolute;
@@ -192,6 +287,23 @@ text-align: center;
         border: 0;
         clip: rect(0 0 0 0);
       }
+      /*---------GALLERY______-----------*/
+      .container-gallery
+      {
+        width: 1200px;
+       margin-left: auto;
+       margin-right: auto;
+      }
+      .title-gallery
+      {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width:auto;
+        margin-top: 47px;
+      
+
+      }
 .text-gallery
 {
         color: var(--title-text-color);
@@ -200,12 +312,31 @@ text-align: center;
         line-height: 1.16px;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-top: 94px;
 }
 /*----------COMMAND--------------*/
 .command 
 {
        /* width: 1600px;*/
         background-color: var(--background-team-color);
+        margin-top: 122px;
+        margin-bottom: 0;
+}
+.title-command
+{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        width: auto;
+        padding-left: 0px;
+       /* padding-top: 50px;*/
+        padding-bottom: 94px;
+        text-align: center;
+   
+}
+.list-command
+{
+        background-color: var(--poster-text-color);
 }
 
 .text-command
@@ -216,6 +347,8 @@ text-align: center;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
+        padding-top: 94px;
+        margin-bottom: 50px;
 }
         
 
@@ -228,12 +361,18 @@ text-align: center;
         letter-spacing: 0.03em;
 
 }
+.pict-command
+{
+        margin-bottom: 30PX;
+}
+/*-----------------------STILE DESCRIPTION------------------*/
 .desckription-work
 {
         font-weight: 400;
        /* font-size: 16px;
         line-height: 1.71;*/
         letter-spacing: 0.03em;
+        margin-bottom: 10PX;
         /*color: var(--primary-text-color);*/
      
 }
@@ -245,6 +384,7 @@ text-align: center;
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
+        margin-bottom: 30px;
 
 }
 .desckription-port
@@ -256,6 +396,16 @@ text-align: center;
         letter-spacing: 0.03em;
 
 }
+/*-----------------------PORTFOLIO-STILE------------------*/
+.flex-portfolio
+{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: auto;
+        padding-left: 0px;
+        margin-left: 0px;
+}
 /* -----------------------------------footer style-------------------------*/ 
 
 .footer
@@ -264,7 +414,18 @@ text-align: center;
        /* width: 1600px;*/
        /* height: 252px;*/
        /* left: 0px; */
-        top: 2094px;
+        margin:0;
+        
+        
+}
+.container-foter
+{
+       width: 1200px;
+      /*height: 256px;*/        
+       padding-left: 15px;
+       vertical-align: middle;
+       margin-left: auto;
+       margin-right: auto;
 }
 .stile-log-footer
 {
@@ -274,7 +435,7 @@ text-align: center;
 }
 .footer-log
 {
-/*        padding-left: 215px;*/
+        padding-top: 60px;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;
@@ -284,7 +445,17 @@ text-align: center;
 {
         font-style: normal;
 }
-/*.title-footer*/
+.title-footer
+{
+        margin: 0;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 60px;
+}
+.list-footer
+{
+        padding-top: 9px;
+}
 
         /*padding-left: 215px;*/
 
